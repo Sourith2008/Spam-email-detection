@@ -5,7 +5,7 @@ from sklearn.svm import SVC
 import pandas as pd
 from sklearn.metrics import accuracy_score
 #Load the data
-data=pd.read_csv(r'C:\Users\PC\Desktop\DESKTOP\Saheb\Python Machine Learning Algorithms\emails.csv')
+data=pd.read_csv('data/emails.csv')
 x=data['text']
 y=data['spam']
 #Load the TF-IDF vectorizer
