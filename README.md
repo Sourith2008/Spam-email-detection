@@ -4,7 +4,7 @@
 Predicting whether an E-mail is spam or not.
 
 ## Dataset
--Spam email Dataset(Kaggle) or any emails.csv
+- Spam email Dataset(Kaggle) or any emails.csv
 
 ## Requirements
 - Python 3.8+
