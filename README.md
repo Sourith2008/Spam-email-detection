@@ -24,7 +24,7 @@ Build a Machine learning model that classifies emaails as *Spam* or *Not spam* u
 2. Run 'spam-email-detection.py' .
 
 ## Example Output
-'''
+```
 Enter your Email:
 Congratulations! You have won 10 lakh rupees.
 
@@ -34,4 +34,4 @@ Enter your Email:
 I will call you.
 
 Prediction: Not spam
-'''
+```
