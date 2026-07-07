@@ -1,7 +1,7 @@
 # Spam-email-detection using TF-IDF and Support Vector Machine
 
 ## Goal
-Build a Machine learning model that classifies emaails as *Spam* or *Not spam* using Natural language Processing(NLP) techniques.
+Build a Machine learning model that classifies emails as *Spam* or *Not spam* using Natural language Processing(NLP) techniques.
 
 ## Dataset
 - Spam email Dataset(Kaggle) or any emails.csv
