@@ -3,9 +3,10 @@ from models import get_models
 from evaluation import evaluate_model,show_confusion_matrix
 import joblib
 
-DATA_PATH='data/emails.csv'
+ORIGINAL_DATA='data/emails.csv'
+EXPANSION_DATA='data/modern_email_expansion.csv'
 
-data=load_data(DATA_PATH)
+data=load_data(ORIGINAL_DATA,EXPANSION_DATA)
 
 x_train,x_test,y_train,y_test,vectorizer=prepare_data(data)
 
@@ -40,6 +41,5 @@ for result in results:
         )
 
 best_model=models["SVM"]
-best_model.fit(x_train,y_train)
 joblib.dump(best_model,'models/best_model.pkl')
 joblib.dump(vectorizer,'models/tfidf_vectorizer.pkl')

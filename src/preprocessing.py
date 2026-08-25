@@ -2,8 +2,18 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-def load_data(path):
-    df=pd.read_csv(path)
+def load_data(original_path,expansion_path):
+    original_data=pd.read_csv(original_path)
+    expansion_data=pd.read_csv(expansion_path)
+
+    df=pd.concat(
+        [original_data,expansion_data],
+        ignore_index=True
+    )
+
+    df=df.drop_duplicates(
+        subset=['text']
+    ).reset_index(drop=True)
     return df
 
 def prepare_data(data):
